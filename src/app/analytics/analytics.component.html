@@ -1,12 +1,8 @@
-<chart [options]="optionsCount" (load)="saveInstance($event.context)">
-</chart>
-
-<div>
+<div class="container">
+    <chart [options]="optionsCount" (load)="saveInstance($event.context)">
+    </chart>
     <chart [options]="optionsSpeed" (load)="saveInstanceChartSpeed($event.context)">
     </chart>
-</div>
-
-<div>
     <chart [options]="optionsTimes" (load)="saveInstanceChartTimes($event.context)">
     </chart>
 </div>
